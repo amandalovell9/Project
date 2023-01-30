@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>housing</title>
+</head>
+<body>
+    <form action="{{ url_for('predict')}}" method="POST">
+        housing_median_age:  <input type="text" name="housing_median_age"></br>
+        total_rooms:   <input type="text" name="total_rooms"></br>
+	  median_income:  <input type="text" name="median_income"></br>
+	  population:   <input type="text" name="population"></br>
+      
+        <input type=submit value=Submit>
+   </form>
+    My final prediction: {{ predict }}
+</body>
+</html>
